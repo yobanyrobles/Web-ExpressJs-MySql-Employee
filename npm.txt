@@ -1,0 +1,9 @@
+npm init
+npm install
+npm install express
+npm install jsonwebtoken
+npm install cors
+npm install sequelize
+npm install mariadb
+node index.js
+explorer http://localhost:3000/
