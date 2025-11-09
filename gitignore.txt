@@ -1,0 +1,19 @@
+Ignoring Specific Files and Directories
+
+To ignore a specific file, provide the full path from the root of the project:
+
+/text.txt
+To ignore a directory and its contents, include the directory name with a trailing slash:
+
+test/
+To ignore all files with a specific name, use the file name alone:
+
+text.txt
+To ignore files with a specific extension, use a wildcard pattern:
+
+*.md
+To make exceptions for specific files, use the negating pattern with an exclamation mark:
+
+*.md
+!README.md
+This pattern will ignore all .md files except README.md
