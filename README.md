@@ -14,4 +14,4 @@ Api express js y mysql para gestionar empleados
 	1. - Exportar los endpoint desde el archivo Employee.postman_collection a tu Postman
 
 ### Notas
-* Api sin validaciones en los datos que recibe
+* Api sin validaciones en los datos entrantes

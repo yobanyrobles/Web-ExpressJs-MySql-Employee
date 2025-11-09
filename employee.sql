@@ -1,21 +1,22 @@
 
-CREATE TABLE `employees` (
-  `id` int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+create table table `employees` (
+  `id` int not null primary key auto_increment,
 
-  `name` varchar(32) NOT NULL,
-  `lastname_first` varchar(32) NOT NULL,
-  `lastname_second` varchar(32) NULL,
+  `name` varchar(32) not null,
+  `lastname_first` varchar(32) not null,
+  `lastname_second` varchar(32) null,
 
-  `birthdate` date NOT NULL,
-  `email` varchar(64) NOT NULL UNIQUE,
-  `phone` varchar(16) NOT NULL UNIQUE,
+  `birthdate` date not null,
+  `email` varchar(64) not null unique,
+  `password` varchar(8) not null,
+  `phone` varchar(16) not null unique,
 
-  `image` varchar(86) NULL,
+  `image` varchar(86) null,
 
-  `identification` varchar(16) NOT NULL UNIQUE,
-  `identification_type` int NOT NULL DEFAULT 1,
+  `identification` varchar(16) not null unique,
+  `identification_type` int not null default 1,
 
-  `status` tinyint(1) NOT NULL DEFAULT 1,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `status` tinyint(1) not null default 1,
+  `created_at` timestamp not null default current_timestamp,
+  `updated_at` timestamp not null default current_timestamp on update current_timestamp
 );
